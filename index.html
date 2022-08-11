@@ -205,7 +205,7 @@
 						</a>
                       	<a href="https://www.geogebra.org/" target="_blank"> 
                         <div class="item"> <div class="avatar"> <img src="images/geogebra.png"> </div>
-                        <div class="inner"> <h5>GeoGebra</h5> <p>交互式几何软件</p> </div> </div>
+                        <div class="inner"> <h5>GeoGebra</h5> <p>交互式几何绘图软件</p> </div> </div>
 						</a>
                       	<a href="https://www.baidu.com/" target="_blank"> 
                         <div class="item"> <div class="avatar"> <img src="images/baidu.png"> </div>
@@ -247,9 +247,11 @@
             let title = 'Copyright © imwzx.\nAll Rights Reserved.'
             console.log(`%c${title}`, styleTitle)
       	</script>
-      <audio autoplay>
-	      <source src="https://api.uomg.com/api/rand.music?sort=any" type="audio/mpeg">
-      </audio>
+      <audio autoplay id="msc" src="https://api.uomg.com/api/rand.music?sort=any"></audio>
+	  <script>
+		  document.documentElement.addEventListener("click", function(){
+			  msc.play();
+ 		  });
+	  </script>
     </body>
 </html>
-	
