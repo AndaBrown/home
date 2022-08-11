@@ -28,7 +28,14 @@
     width: 8px;
     height: 8px;
 }
+/*鼠标样式开始*/
+/*鼠标指针样式*/
+body{cursor:url("curs/Arrow.cur"),default;}
+/*鼠标链接指针样式*/
+a:hover{cursor:url("curs/Hand.cur"),pointer;}
+/*鼠标样式结束*/
 </style>
+		
 <!--51LA-->
 <script>
   !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JmPSiu1nKzhHm1BS",ck:"JmPSiu1nKzhHm1BS"});
@@ -239,15 +246,15 @@
             </div>
         </div>
         <script type="text/javascript" src="js/page.js" charset="UTF-8"></script> 
-        <script type="text/javascript" src="js/stats.js" charset="UTF-8"></script>
+        <!--<script type="text/javascript" src="js/stats.js" charset="UTF-8"></script>-->
         <script>
-            //控制台输出
             console.clear();
             let styleTitle = `font-size: 20px; font-weight: 600; color: rgb(244,167,89);`
             let title = 'Copyright © imwzx.\nAll Rights Reserved.'
             console.log(`%c${title}`, styleTitle)
       	</script>
-      <audio autoplay id="msc" src="https://api.uomg.com/api/rand.music?sort=any"></audio>
+      <audio autoplay id="msc" src="https://api.uomg.com/api/rand.music?sort=any">
+	  </audio>
 	  <script>
 		  document.documentElement.addEventListener("click", function(){
 			  msc.play();
